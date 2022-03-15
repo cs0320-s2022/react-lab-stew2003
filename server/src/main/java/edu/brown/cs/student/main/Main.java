@@ -97,7 +97,7 @@ public final class Main {
    *
    * @author jj
    */
-  private static class ExceptionPrinter implements ExceptionHandler {
+  private static class ExceptionPrinter implements ExceptionHandler<Exception> {
     @Override
     public void handle(Exception e, Request req, Response res) {
       res.status(500);
